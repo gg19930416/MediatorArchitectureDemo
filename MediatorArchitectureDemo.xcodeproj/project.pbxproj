@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A7225998E31154A61225D52 /* Pods_MediatorArchitectureDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236F6AE69CE773A5FB8E0826 /* Pods_MediatorArchitectureDemo.framework */; };
+		C62D6B5F22A50923002BC04A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C62D6B5E22A50923002BC04A /* AppDelegate.m */; };
+		C62D6B6522A50923002BC04A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62D6B6322A50923002BC04A /* Main.storyboard */; };
+		C62D6B6722A50924002BC04A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62D6B6622A50924002BC04A /* Assets.xcassets */; };
+		C62D6B6A22A50924002BC04A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62D6B6822A50924002BC04A /* LaunchScreen.storyboard */; };
+		C62D6B6D22A50924002BC04A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C62D6B6C22A50924002BC04A /* main.m */; };
+		C62D6B7722A50925002BC04A /* MediatorArchitectureDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C62D6B7622A50925002BC04A /* MediatorArchitectureDemoTests.m */; };
+		C62D6B8222A50925002BC04A /* MediatorArchitectureDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C62D6B8122A50925002BC04A /* MediatorArchitectureDemoUITests.m */; };
+		C62D6B9522A50BC3002BC04A /* NXDict.m in Sources */ = {isa = PBXBuildFile; fileRef = C62D6B9422A50BC3002BC04A /* NXDict.m */; };
+		C62D6B9822A50F7B002BC04A /* CoordinateAction.m in Sources */ = {isa = PBXBuildFile; fileRef = C62D6B9722A50F7B002BC04A /* CoordinateAction.m */; };
+		C62D6B9B22A51C63002BC04A /* Coordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = C62D6B9A22A51C63002BC04A /* Coordinate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C62D6B7322A50925002BC04A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C62D6B5222A50923002BC04A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C62D6B5922A50923002BC04A;
+			remoteInfo = MediatorArchitectureDemo;
+		};
+		C62D6B7E22A50925002BC04A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C62D6B5222A50923002BC04A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C62D6B5922A50923002BC04A;
+			remoteInfo = MediatorArchitectureDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		236F6AE69CE773A5FB8E0826 /* Pods_MediatorArchitectureDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediatorArchitectureDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A3BFC488FECFFB887534E6 /* Pods-MediatorArchitectureDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediatorArchitectureDemo.debug.xcconfig"; path = "Target Support Files/Pods-MediatorArchitectureDemo/Pods-MediatorArchitectureDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7AC51534CC1AFCF5FFDA4D94 /* Pods-MediatorArchitectureDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediatorArchitectureDemo.release.xcconfig"; path = "Target Support Files/Pods-MediatorArchitectureDemo/Pods-MediatorArchitectureDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C62D6B5A22A50923002BC04A /* MediatorArchitectureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediatorArchitectureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C62D6B5D22A50923002BC04A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C62D6B5E22A50923002BC04A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C62D6B6422A50923002BC04A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C62D6B6622A50924002BC04A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C62D6B6922A50924002BC04A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C62D6B6B22A50924002BC04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C62D6B6C22A50924002BC04A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C62D6B7222A50925002BC04A /* MediatorArchitectureDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediatorArchitectureDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C62D6B7622A50925002BC04A /* MediatorArchitectureDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorArchitectureDemoTests.m; sourceTree = "<group>"; };
+		C62D6B7822A50925002BC04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C62D6B7D22A50925002BC04A /* MediatorArchitectureDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediatorArchitectureDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C62D6B8122A50925002BC04A /* MediatorArchitectureDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorArchitectureDemoUITests.m; sourceTree = "<group>"; };
+		C62D6B8322A50925002BC04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C62D6B9322A50BC3002BC04A /* NXDict.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXDict.h; sourceTree = "<group>"; };
+		C62D6B9422A50BC3002BC04A /* NXDict.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXDict.m; sourceTree = "<group>"; };
+		C62D6B9622A50F7B002BC04A /* CoordinateAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinateAction.h; sourceTree = "<group>"; };
+		C62D6B9722A50F7B002BC04A /* CoordinateAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoordinateAction.m; sourceTree = "<group>"; };
+		C62D6B9922A51C63002BC04A /* Coordinate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinate.h; sourceTree = "<group>"; };
+		C62D6B9A22A51C63002BC04A /* Coordinate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coordinate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C62D6B5722A50923002BC04A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A7225998E31154A61225D52 /* Pods_MediatorArchitectureDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62D6B6F22A50925002BC04A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62D6B7A22A50925002BC04A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C88D1B4CA2E2DD3F56A0775 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				236F6AE69CE773A5FB8E0826 /* Pods_MediatorArchitectureDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDC40FB41918EE3D0ED640EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45A3BFC488FECFFB887534E6 /* Pods-MediatorArchitectureDemo.debug.xcconfig */,
+				7AC51534CC1AFCF5FFDA4D94 /* Pods-MediatorArchitectureDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C62D6B5122A50923002BC04A = {
+			isa = PBXGroup;
+			children = (
+				C62D6B5C22A50923002BC04A /* MediatorArchitectureDemo */,
+				C62D6B7522A50925002BC04A /* MediatorArchitectureDemoTests */,
+				C62D6B8022A50925002BC04A /* MediatorArchitectureDemoUITests */,
+				C62D6B5B22A50923002BC04A /* Products */,
+				BDC40FB41918EE3D0ED640EF /* Pods */,
+				5C88D1B4CA2E2DD3F56A0775 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C62D6B5B22A50923002BC04A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C62D6B5A22A50923002BC04A /* MediatorArchitectureDemo.app */,
+				C62D6B7222A50925002BC04A /* MediatorArchitectureDemoTests.xctest */,
+				C62D6B7D22A50925002BC04A /* MediatorArchitectureDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C62D6B5C22A50923002BC04A /* MediatorArchitectureDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C62D6B8F22A50B65002BC04A /* coordinate */,
+				C62D6B5D22A50923002BC04A /* AppDelegate.h */,
+				C62D6B5E22A50923002BC04A /* AppDelegate.m */,
+				C62D6B6322A50923002BC04A /* Main.storyboard */,
+				C62D6B6622A50924002BC04A /* Assets.xcassets */,
+				C62D6B6822A50924002BC04A /* LaunchScreen.storyboard */,
+				C62D6B6B22A50924002BC04A /* Info.plist */,
+				C62D6B6C22A50924002BC04A /* main.m */,
+			);
+			path = MediatorArchitectureDemo;
+			sourceTree = "<group>";
+		};
+		C62D6B7522A50925002BC04A /* MediatorArchitectureDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C62D6B7622A50925002BC04A /* MediatorArchitectureDemoTests.m */,
+				C62D6B7822A50925002BC04A /* Info.plist */,
+			);
+			path = MediatorArchitectureDemoTests;
+			sourceTree = "<group>";
+		};
+		C62D6B8022A50925002BC04A /* MediatorArchitectureDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C62D6B8122A50925002BC04A /* MediatorArchitectureDemoUITests.m */,
+				C62D6B8322A50925002BC04A /* Info.plist */,
+			);
+			path = MediatorArchitectureDemoUITests;
+			sourceTree = "<group>";
+		};
+		C62D6B8F22A50B65002BC04A /* coordinate */ = {
+			isa = PBXGroup;
+			children = (
+				C62D6B9322A50BC3002BC04A /* NXDict.h */,
+				C62D6B9422A50BC3002BC04A /* NXDict.m */,
+				C62D6B9622A50F7B002BC04A /* CoordinateAction.h */,
+				C62D6B9722A50F7B002BC04A /* CoordinateAction.m */,
+				C62D6B9922A51C63002BC04A /* Coordinate.h */,
+				C62D6B9A22A51C63002BC04A /* Coordinate.m */,
+			);
+			path = coordinate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C62D6B5922A50923002BC04A /* MediatorArchitectureDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C62D6B8622A50925002BC04A /* Build configuration list for PBXNativeTarget "MediatorArchitectureDemo" */;
+			buildPhases = (
+				667863BC6CB60114A38A8215 /* [CP] Check Pods Manifest.lock */,
+				C62D6B5622A50923002BC04A /* Sources */,
+				C62D6B5722A50923002BC04A /* Frameworks */,
+				C62D6B5822A50923002BC04A /* Resources */,
+				3D65F308D4548911E881C0BA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediatorArchitectureDemo;
+			productName = MediatorArchitectureDemo;
+			productReference = C62D6B5A22A50923002BC04A /* MediatorArchitectureDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C62D6B7122A50925002BC04A /* MediatorArchitectureDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C62D6B8922A50925002BC04A /* Build configuration list for PBXNativeTarget "MediatorArchitectureDemoTests" */;
+			buildPhases = (
+				C62D6B6E22A50925002BC04A /* Sources */,
+				C62D6B6F22A50925002BC04A /* Frameworks */,
+				C62D6B7022A50925002BC04A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C62D6B7422A50925002BC04A /* PBXTargetDependency */,
+			);
+			name = MediatorArchitectureDemoTests;
+			productName = MediatorArchitectureDemoTests;
+			productReference = C62D6B7222A50925002BC04A /* MediatorArchitectureDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C62D6B7C22A50925002BC04A /* MediatorArchitectureDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C62D6B8C22A50925002BC04A /* Build configuration list for PBXNativeTarget "MediatorArchitectureDemoUITests" */;
+			buildPhases = (
+				C62D6B7922A50925002BC04A /* Sources */,
+				C62D6B7A22A50925002BC04A /* Frameworks */,
+				C62D6B7B22A50925002BC04A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C62D6B7F22A50925002BC04A /* PBXTargetDependency */,
+			);
+			name = MediatorArchitectureDemoUITests;
+			productName = MediatorArchitectureDemoUITests;
+			productReference = C62D6B7D22A50925002BC04A /* MediatorArchitectureDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C62D6B5222A50923002BC04A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "郭刚";
+				TargetAttributes = {
+					C62D6B5922A50923002BC04A = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					C62D6B7122A50925002BC04A = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = C62D6B5922A50923002BC04A;
+					};
+					C62D6B7C22A50925002BC04A = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = C62D6B5922A50923002BC04A;
+					};
+				};
+			};
+			buildConfigurationList = C62D6B5522A50923002BC04A /* Build configuration list for PBXProject "MediatorArchitectureDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C62D6B5122A50923002BC04A;
+			productRefGroup = C62D6B5B22A50923002BC04A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C62D6B5922A50923002BC04A /* MediatorArchitectureDemo */,
+				C62D6B7122A50925002BC04A /* MediatorArchitectureDemoTests */,
+				C62D6B7C22A50925002BC04A /* MediatorArchitectureDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C62D6B5822A50923002BC04A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62D6B6A22A50924002BC04A /* LaunchScreen.storyboard in Resources */,
+				C62D6B6722A50924002BC04A /* Assets.xcassets in Resources */,
+				C62D6B6522A50923002BC04A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62D6B7022A50925002BC04A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62D6B7B22A50925002BC04A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D65F308D4548911E881C0BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MediatorArchitectureDemo/Pods-MediatorArchitectureDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MediatorArchitectureDemo/Pods-MediatorArchitectureDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		667863BC6CB60114A38A8215 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MediatorArchitectureDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C62D6B5622A50923002BC04A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62D6B9522A50BC3002BC04A /* NXDict.m in Sources */,
+				C62D6B6D22A50924002BC04A /* main.m in Sources */,
+				C62D6B5F22A50923002BC04A /* AppDelegate.m in Sources */,
+				C62D6B9B22A51C63002BC04A /* Coordinate.m in Sources */,
+				C62D6B9822A50F7B002BC04A /* CoordinateAction.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62D6B6E22A50925002BC04A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62D6B7722A50925002BC04A /* MediatorArchitectureDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62D6B7922A50925002BC04A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62D6B8222A50925002BC04A /* MediatorArchitectureDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C62D6B7422A50925002BC04A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C62D6B5922A50923002BC04A /* MediatorArchitectureDemo */;
+			targetProxy = C62D6B7322A50925002BC04A /* PBXContainerItemProxy */;
+		};
+		C62D6B7F22A50925002BC04A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C62D6B5922A50923002BC04A /* MediatorArchitectureDemo */;
+			targetProxy = C62D6B7E22A50925002BC04A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C62D6B6322A50923002BC04A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C62D6B6422A50923002BC04A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C62D6B6822A50924002BC04A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C62D6B6922A50924002BC04A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C62D6B8422A50925002BC04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C62D6B8522A50925002BC04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C62D6B8722A50925002BC04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A3BFC488FECFFB887534E6 /* Pods-MediatorArchitectureDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56SC42RCX5;
+				INFOPLIST_FILE = MediatorArchitectureDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fff.MediatorArchitectureDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C62D6B8822A50925002BC04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AC51534CC1AFCF5FFDA4D94 /* Pods-MediatorArchitectureDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56SC42RCX5;
+				INFOPLIST_FILE = MediatorArchitectureDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fff.MediatorArchitectureDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C62D6B8A22A50925002BC04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56SC42RCX5;
+				INFOPLIST_FILE = MediatorArchitectureDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fff.MediatorArchitectureDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediatorArchitectureDemo.app/MediatorArchitectureDemo";
+			};
+			name = Debug;
+		};
+		C62D6B8B22A50925002BC04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56SC42RCX5;
+				INFOPLIST_FILE = MediatorArchitectureDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fff.MediatorArchitectureDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediatorArchitectureDemo.app/MediatorArchitectureDemo";
+			};
+			name = Release;
+		};
+		C62D6B8D22A50925002BC04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56SC42RCX5;
+				INFOPLIST_FILE = MediatorArchitectureDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fff.MediatorArchitectureDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MediatorArchitectureDemo;
+			};
+			name = Debug;
+		};
+		C62D6B8E22A50925002BC04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56SC42RCX5;
+				INFOPLIST_FILE = MediatorArchitectureDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fff.MediatorArchitectureDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MediatorArchitectureDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C62D6B5522A50923002BC04A /* Build configuration list for PBXProject "MediatorArchitectureDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62D6B8422A50925002BC04A /* Debug */,
+				C62D6B8522A50925002BC04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C62D6B8622A50925002BC04A /* Build configuration list for PBXNativeTarget "MediatorArchitectureDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62D6B8722A50925002BC04A /* Debug */,
+				C62D6B8822A50925002BC04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C62D6B8922A50925002BC04A /* Build configuration list for PBXNativeTarget "MediatorArchitectureDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62D6B8A22A50925002BC04A /* Debug */,
+				C62D6B8B22A50925002BC04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C62D6B8C22A50925002BC04A /* Build configuration list for PBXNativeTarget "MediatorArchitectureDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62D6B8D22A50925002BC04A /* Debug */,
+				C62D6B8E22A50925002BC04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C62D6B5222A50923002BC04A /* Project object */;
+}
